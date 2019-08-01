@@ -4,3 +4,6 @@ services:
 
 before_install:
   - docker build -t malexandroff/docker-react-demo -f Dockerfile.dev .
+
+script:
+  - docker run -e CI=true malexandroff/docker-react-demo npm run test -- --coverage
