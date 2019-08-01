@@ -17,6 +17,7 @@ class App extends Component {
             return {changed: !prevState.changed}
           })}>
              {this.state.changed ? 'I was changed!' : 'I was not changed!'}
+             on the Feature branch
           </p>
           <a
             className="App-link"
